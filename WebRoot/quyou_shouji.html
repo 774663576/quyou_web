@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>趣友</title>
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="images/title_logo.ico" />
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+<style type="text/css">
+body {
+	background-image: url('images/bgw.jpg');
+	margin: 0px;
+}
+
+.android {
+	margin-top: 25px;
+}
+
+.logo {
+	margin-left: 100px;
+	padding-top: 30px;
+}
+
+.xingqujiaoyou {
+	margin-left: 100px;
+}
+
+font {
+	color: #ffffff
+}
+
+.download {
+	text-align: center;
+	margin-right: 100px;
+	margin-top: 100px;
+}
+
+span {
+	margin-right: 10px;
+}
+
+.qq {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+</style>
+<script type="text/javascript">
+	function down_android() {
+		// 		var url = "./servlet/DownAPKServlet";、
+		var url = "http://123.56.46.254:8080/quyou/app/quyou.apk";
+		window.location.href = url;
+	}
+	function down_ios() {
+		alert("IOS版即将推出,请等待");
+	}
+</script>
+</head>
+
+<body>
+	<div class="qq">
+		<img src="images/QQ.png"></img>
+	</div>
+
+	<div class="logo">
+		<img alt="" src="images/quyou.png"><br> <img
+			class="xingqujiaoyou" alt="" src="images/xingqujiaoyou.png">
+	</div>
+
+	<div class="download">
+		<img alt="" src="images/android_shouji.png" class="android"
+			onclick="down_android()"> <img style="padding-left: 100px"
+			alt="" src="images/ios_shouji.png" class="android"
+			onclick="down_ios()">
+	</div>
+</body>
+</html>
